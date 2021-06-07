@@ -28,9 +28,13 @@ variable "hubs" {
     region = string
     prefix = string
   }))
-
   description = "A list of hubs to create within the virtual WAN."
 }
+
+variable "wan-prefix"{
+  description = "wan prefix" 
+}
+
 
 variable "connections" {
   type        = map(list(string))
